@@ -24,7 +24,7 @@ class TemplateConfig
     @nestTemplate   = !!config.nested
     @includeAll     = !!config.all
     @ensureArray    = !!config.ensureArray
-    @ignoreEmpty    = config.ignoreEmpty != false
+    @ignoreEmpty    = !!config.ignoreEmpty
 
     @config         = config
   
